@@ -11,19 +11,22 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
+    var label:UILabel?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let group = UserDefaults.init(suiteName: "group.com.today.test")
+        let label = UILabel.init(frame: CGRect(x:0,y:0,width: 100,height: 50))
+        label.text = group?.object(forKey: "TodaySnapshot") as? String
+        self.view.addSubview(label)
+        
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
         completionHandler(NCUpdateResult.newData)
+        let group = UserDefaults.init(suiteName: "group.com.today.test")
+        label?.text = group?.object(forKey: "TodaySnapshot") as? String
     }
     
+
 }

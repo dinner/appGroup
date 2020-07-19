@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1AC4D38124C448F400CA850E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4D38024C448F400CA850E /* AppDelegate.swift */; };
-		1AC4D38324C448F400CA850E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4D38224C448F400CA850E /* SceneDelegate.swift */; };
 		1AC4D38524C448F400CA850E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4D38424C448F400CA850E /* ViewController.swift */; };
 		1AC4D38824C448F400CA850E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC4D38624C448F400CA850E /* Main.storyboard */; };
 		1AC4D38A24C448FB00CA850E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC4D38924C448FB00CA850E /* Assets.xcassets */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		1AC4D37D24C448F400CA850E /* appGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC4D38024C448F400CA850E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1AC4D38224C448F400CA850E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1AC4D38424C448F400CA850E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AC4D38724C448F400CA850E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AC4D38924C448FB00CA850E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			children = (
 				1AC4D3AA24C44A1800CA850E /* appGroup.entitlements */,
 				1AC4D38024C448F400CA850E /* AppDelegate.swift */,
-				1AC4D38224C448F400CA850E /* SceneDelegate.swift */,
 				1AC4D38424C448F400CA850E /* ViewController.swift */,
 				1AC4D38624C448F400CA850E /* Main.storyboard */,
 				1AC4D38924C448FB00CA850E /* Assets.xcassets */,
@@ -237,7 +234,6 @@
 			files = (
 				1AC4D38524C448F400CA850E /* ViewController.swift in Sources */,
 				1AC4D38124C448F400CA850E /* AppDelegate.swift in Sources */,
-				1AC4D38324C448F400CA850E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,7 +387,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -456,7 +452,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.today.test.today;
+				PRODUCT_BUNDLE_IDENTIFIER = com.today.test.app.today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -477,7 +473,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.today.test.today;
+				PRODUCT_BUNDLE_IDENTIFIER = com.today.test.app.today;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
